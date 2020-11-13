@@ -3,13 +3,11 @@
   padding: 0;
 }
 
-body {
-}
-
 .main-grid {
   display: grid;
-  grid-template-columns: 15% 1fr 1fr 1fr;
+  grid-template-columns: 5% 1fr 1fr 1fr;
   grid-template-rows: 50px 1fr 1fr 50px;
+  background-color: lightblue;
 }
 
 header {
@@ -17,8 +15,11 @@ header {
   grid-column: 1 / span 4;
   grid-row: 1 / span 1;
   display: flex;
+  width: 100%;
+  height: 50px;
   justify-content: space-evenly;
-  background-color: orchid;
+  background-color: green;
+  position: fixed;
 }
 .Main {
   padding-top: 10px;
@@ -31,12 +32,8 @@ header {
 }
 .Main p {
   margin: 5px;
-  width: 80%;
+  width: 77%;
   background-color: rgba(189, 187, 187, 0.274);
-}
-.Main img {
-  max-height: 450px;
-  align-self: center;
 }
 .Main ul img {
   height: 150px;
@@ -50,10 +47,31 @@ header {
   align-items: center;
   justify-content: space-around;
 }
+.Three_Products {
+  display: flex;
+  justify-content: space-around;
+}
+.Two_Products {
+  display: flex;
+  justify-content: space-around;
+}
+/*.Two_Products img {
+  height: 30%;
+}
+*/
+.Slideshow {
+  width: 50%;
+  margin: auto;
+}
+
+.Slideshow img {
+  width: 100%;
+}
 .Sidebar {
   position: fixed;
   padding-top: 50px;
-  width: 150px;
+  margin-top: 20px;
+  width: 10%;
   color: black;
 }
 nav ul {
@@ -73,7 +91,7 @@ nav li {
 }
 
 nav li:hover {
-  background-color: red;
+  background-color: grey;
 }
 nav a {
   color: black;
@@ -85,7 +103,8 @@ header a {
 }
 footer {
   width: 100%;
-  padding: 10px;
+  margin: 0px;
+  padding: 5px;
   background-color: rgb(17, 146, 13);
   grid-row: end;
   grid-column: 1 / span 4;
