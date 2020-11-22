@@ -33,10 +33,18 @@ header {
 .Main p {
   margin: 5px;
   width: 77%;
+  font-size: 1vw + 0.85em;
   background-color: rgba(189, 187, 187, 0.274);
 }
-.Main ul img {
-  height: 150px;
+@media screen and (max-width: 450px) {
+  .Main p {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 601px) {
+  .Main p {
+    font-size: 20px;
+  }
 }
 .Main ul {
   margin-top: 30px;
@@ -51,14 +59,17 @@ header {
   display: flex;
   justify-content: space-around;
 }
+.Three_Products img {
+  width: 70%;
+}
 .Two_Products {
   display: flex;
   justify-content: space-around;
 }
-/*.Two_Products img {
-  height: 30%;
+.Two_Products img {
+  width: 60%;
 }
-*/
+
 .Slideshow {
   width: 50%;
   margin: auto;
@@ -74,6 +85,16 @@ header {
   width: 10%;
   color: black;
 }
+@media screen and (max-width: 450px) {
+  .Sidebar {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 701px) {
+  .Sidebar {
+    font-size: 20px;
+  }
+}
 nav ul {
   height: 50vh;
   color: black;
@@ -82,6 +103,11 @@ nav ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media screen and (max-width: 450px) {
+  nav ul {
+    height: 20%;
+  }
 }
 nav li {
   padding-top: 10px;
@@ -105,7 +131,7 @@ footer {
   width: 100%;
   margin: 0px;
   padding: 5px;
-  background-color: rgb(17, 146, 13);
+  background-color: rgb(49, 155, 46);
   grid-row: end;
   grid-column: 1 / span 4;
 }
@@ -121,4 +147,13 @@ footer ul {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+.footer_list a {
+  color: black;
+  text-decoration: none;
+}
+@media screen and (max-width: 450px) {
+  footer {
+    font-size: 10px;
+  }
 }
