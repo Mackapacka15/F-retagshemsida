@@ -25,6 +25,7 @@ header {
   position: fixed;
 }
 .Main {
+  margin-top: 20px;
   padding-top: 10px;
   margin-bottom: 10px;
   grid-row: 2 / span 3;
@@ -35,7 +36,7 @@ header {
 }
 .Main p {
   margin: 5px;
-  width: 77%;
+  width: 60%;
 }
 @media screen and (max-width: 450px) {
   .Main p {
@@ -66,11 +67,10 @@ header {
 .Three_Products img {
   width: 70%;
 }
-.Three_Products p {
-  padding-left: 12px;
-}
+
 .Two_Products {
   display: flex;
+  padding-top: 10px;
   justify-content: space-around;
   background-color: whitesmoke;
   padding-bottom: 10px;
