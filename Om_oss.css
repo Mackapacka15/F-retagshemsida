@@ -35,7 +35,7 @@ header {
 }
 .Main p {
   margin: 5px;
-  width: 77%;
+  width: 60%;
 }
 @media screen and (max-width: 450px) {
   .Main p {
@@ -49,50 +49,21 @@ header {
 }
 .Main ul {
   margin-top: 30px;
-  width: 75%;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-.Three_Products {
-  padding-top: 5px;
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  background-color: whitesmoke;
-}
-.Three_Products img {
-  width: 70%;
-}
-.Three_Products p {
-  padding-left: 12px;
-}
-.Two_Products {
-  display: flex;
-  justify-content: space-around;
-  background-color: whitesmoke;
-  padding-bottom: 10px;
-  text-align: center;
-}
-.Two_Products img {
   width: 60%;
 }
-
+.Main li {
+  font-size: 20px;
+}
+@media screen and (max-width: 450px) {
+  .Main li {
+    font-size: 10px;
+  }
+}
 .Alla_pool {
   margin: 20px;
 }
 .Alla_pool img {
   width: 75%;
-}
-.Slideshow {
-  width: 50%;
-  margin: auto;
-}
-
-.Slideshow img {
-  width: 100%;
 }
 .Sidebar {
   position: fixed;
